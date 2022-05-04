@@ -27,10 +27,12 @@ public class RehoLorenzoClass {
 	 * @return risultato della sommatoria
 	 * 
 	 * */
+	// Sono stati individuati degli errori nel codice per il calcolo della sommatoria
+	// sono stati corretti
 	public int rehoMet(int f) {
-		int r = 1;
-		for(int i = f; i < 0; i++)
-			r *= i;
+		int r = 0;
+		for(int i = f; i >= 0; i--)
+			r += i;
 		return r;
 	}
 	
